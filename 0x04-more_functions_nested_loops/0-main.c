@@ -1,29 +1,22 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
-* largest_number - returns the largest of 3 numbers
-* @a: first integer
-* @b: second integer
-* @c: third integer
-* Return: largest number
+
+int _putchar(char c);
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+void print_numbers(void);
+void print_most_numbers(void);
+void more_numbers(void);
+void print_line(int n);
+void print_diagonal(int n);
+void print_square(int size);
+void print_triangle(int size);
+void print_number(int n);
+
+
+#endif
+/*
+Bwave ICT
 */
-
-int largest_number(int a, int b, int c)
-{
-	int largest;
-
-	if (a >= b && a >= c)
-	{
-		largest = a;
-	}
-	else if (b >= a && b >= c)
-	{
-		largest = b;
-	}
-	else
-	{
-		largest = c;
-	}
-
-	return (largest);
-}
