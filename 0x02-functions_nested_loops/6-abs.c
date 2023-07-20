@@ -1,15 +1,16 @@
 #include "main.h"
-
 /**
- * _abs - Computes the absolute value of an integer.
- * @n: The integer to be computed.
- *
- * Return: The absolute value of the integer.
- */
-int _abs(int n)
+ *_abs - entry level
+ *@dig: the input number of an intger
+ *Return: Alawys 0
+*/
+int _abs(int dig)
 {
-	if (n >= 0)
-		return (n);
+	if (dig < 0)
+	{
+		dig = dig * (-1);
+		return (dig);
+	}
 	else
-		return (-n);
+		return (dig);
 }
